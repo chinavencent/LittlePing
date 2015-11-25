@@ -1,4 +1,4 @@
-           <?php
+            <?php
 
 /*
 |--------------------------------------------------------------------------
@@ -167,6 +167,9 @@ Route::get('/test',function(){
 });
 Route::get('/boostrap',function(){
 	return view('boostrap.boostrap');
+});
+Route::get('/boostrap/modal',function(){
+	return view('boostrap.modal');
 });
 
 Route::get('/',function(){

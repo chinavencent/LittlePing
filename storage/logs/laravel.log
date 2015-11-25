@@ -23407,3 +23407,42 @@ Stack trace:
 #39 H:\web\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(87): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
 #40 H:\web\laravel\public\index.php(54): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
 #41 {main}  
+[2015-11-23 23:31:33] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'function' (T_FUNCTION)' in H:\web\laravel\app\Http\routes.php:171
+Stack trace:
+#0 {main}  
+[2015-11-23 23:32:04] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '}'' in H:\web\laravel\app\Http\routes.php:173
+Stack trace:
+#0 {main}  
+[2015-11-24 22:53:48] local.ERROR: exception 'RuntimeException' with message 'No supported encrypter found. The cipher and / or key length are invalid.' in H:\web\laravel\vendor\laravel\framework\src\Illuminate\Encryption\EncryptionServiceProvider.php:29
+Stack trace:
+#0 H:\web\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(734): Illuminate\Encryption\EncryptionServiceProvider->Illuminate\Encryption\{closure}(Object(Illuminate\Foundation\Application), Array)
+#1 H:\web\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(627): Illuminate\Container\Container->build(Object(Closure), Array)
+#2 H:\web\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(674): Illuminate\Container\Container->make('encrypter', Array)
+#3 H:\web\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(838): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#4 H:\web\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(801): Illuminate\Container\Container->resolveClass(Object(ReflectionParameter))
+#5 H:\web\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(772): Illuminate\Container\Container->getDependencies(Array, Array)
+#6 H:\web\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(627): Illuminate\Container\Container->build('App\\Http\\Middle...', Array)
+#7 H:\web\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(674): Illuminate\Container\Container->make('App\\Http\\Middle...', Array)
+#8 H:\web\laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(123): Illuminate\Foundation\Application->make('App\\Http\\Middle...')
+#9 H:\web\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode.php(42): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#10 [internal function]: Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#11 H:\web\laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(124): call_user_func_array(Array, Array)
+#12 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#13 H:\web\laravel\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(103): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#14 H:\web\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(122): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#15 H:\web\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(87): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#16 H:\web\laravel\public\index.php(54): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#17 {main}  
+[2015-11-24 22:53:48] local.ERROR: exception 'RuntimeException' with message 'No supported encrypter found. The cipher and / or key length are invalid.' in H:\web\laravel\vendor\laravel\framework\src\Illuminate\Encryption\EncryptionServiceProvider.php:29
+Stack trace:
+#0 H:\web\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(734): Illuminate\Encryption\EncryptionServiceProvider->Illuminate\Encryption\{closure}(Object(Illuminate\Foundation\Application), Array)
+#1 H:\web\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(627): Illuminate\Container\Container->build(Object(Closure), Array)
+#2 H:\web\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(674): Illuminate\Container\Container->make('encrypter', Array)
+#3 H:\web\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(838): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#4 H:\web\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(801): Illuminate\Container\Container->resolveClass(Object(ReflectionParameter))
+#5 H:\web\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(772): Illuminate\Container\Container->getDependencies(Array, Array)
+#6 H:\web\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(627): Illuminate\Container\Container->build('App\\Http\\Middle...', Array)
+#7 H:\web\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(674): Illuminate\Container\Container->make('App\\Http\\Middle...', Array)
+#8 H:\web\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(142): Illuminate\Foundation\Application->make('App\\Http\\Middle...')
+#9 H:\web\laravel\public\index.php(58): Illuminate\Foundation\Http\Kernel->terminate(Object(Illuminate\Http\Request), Object(Illuminate\Http\Response))
+#10 {main}  

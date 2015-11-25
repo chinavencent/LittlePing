@@ -6,8 +6,7 @@
 
 </head>
 <body>
-  <!-- form fo sign in -->
-
+  <!-- Modal fo sign in -->
     <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content login">
@@ -15,13 +14,16 @@
           <h2>Log in to Myweb</h2>
           <form class="form-signin col-md-6 col-md-offset-3" role="form" method="post" action="https://manager.wasify.com/login"> 
             <div class="form-signin">
-              <label class="sr-only" for="email">Account email</label>
+              <label  for="email">Account email</label>
               <input type="text" class="form-control" id="email" name="email" maxlength="50" placeholder="Account email" value="">
               <label class="sr-only" for="pass">Password</label>
               <input type="password" class="form-control" id="pass" name="pass" maxlength="20" placeholder="Password" value="" data-toggle="fixed-tooltip"> 
             </div>
              <br>
-            <button class="btn btn-success btn-block" type="submit" name="commandLogin" value="1">Log in</button>
+            <button class="btn btn-success btn-inline btn-lg" type="submit" name="commandSignin" value="1">Sign in</button>
+            <button class="btn btn-success btn-inline btn-lg" type="submit" name="commandSignup" value="1">
+                Sign up
+            </button>
             <div class="loginLinks">
               <a href="https://manager.wasify.com/forgotten_password" rel="nofollow">Forgotten password?</a>
               <a href="#" rel="nofollow" data-toggle="modal" data-target="#signUp">Not a client yet? Try Fedora!</a>
@@ -30,6 +32,28 @@
         </div>
       </div>
     </div>
+<!-- Modal to contact -->
+<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="myModalLable">
+  <div class="modal-dialog">
+    <div class="modal-content contact">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-lable="Close">
+          <span aria-hidden="trun">&times;</span>
+        </button>
+        <h4 class="modal-title">Hello,Welcome To My Web,Please Enjoy It.</h4>
+      </div>
+      <div class="modal-body">
+        <p>We are cordially invatiting for your arriving</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn- btn-lg" >
+          <a href="#" rel="nofollow" data-toggle="modal" data-target="#login">Join Us</a>
+        </button>
+        <button type="button" class="btn btn-default btn-lg " data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
   <!-- page for header -->
 	<div class="header">
@@ -43,8 +67,8 @@
 						</h1>
 					</div>
 				</div>
-				<div class="col-sm-4 col-xs-3">
-					<ul class="nav nav-pills nav-fixed-top " role="navigation"> 
+				<div class="col-sm-5 col-xs-3">
+					<ul class="nav nav-pills nav-fixed-top " role="navigation" id="nav"> 
 						<li role="presentation">
 							<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" 
     						aria-haspopup="true" aria-expanded="false">Get Tools</a>
@@ -71,11 +95,11 @@
 					</ul>
 				</div>
 
-        <div class="col-sm-4 col-xs-3">
+        <div class="col-sm-3 col-xs-3">
         <div class="navbar-collapse collapse ">
                 <ul class="nav navbar-nav navbar-right helpNav">
                     <li><a href="#" rel="nofollow" data-toggle="modal" data-target="#login">Log in</a></li>
-                    <li><a href="/en/contact">Contact</a></li>
+                    <li><a href="#" rel="nofollow" data-toggle="modal" data-target="#contact">Contact</a></li>
                     <li class="hidden-xs">
                     <div class="langSelector btn-group" role="group">
                       <a data-toggle="dropdown" class="btn btn-info">
